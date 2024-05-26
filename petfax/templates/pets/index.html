@@ -9,14 +9,14 @@
 </head>
 <body>
     <div class="container">
-        <H1>PetFax</H1>
+        <h1>PetFax</h1>
         <div class="subtext">
             Welcome to PetFax!
         </div>
         <div class="pets-container">
             {% for pet in pets %}
                 <div class="pet">
-                    <H2>{{ pet.pet_name }}</H2>
+                    <h2>{{ pet.pet_name }}</h2>
                     <img src="{{pet.pet_photo}}" />
                     <a href="/pets/{{ pet.pet_id }}">Learn more</a>
                 </div>

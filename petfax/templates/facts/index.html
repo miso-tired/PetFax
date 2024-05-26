@@ -7,9 +7,9 @@
 </head>
 <body>
     <div class="container">
-        <H1>UserFax</H1>
+        <h1>UserFax</h1>
         {% for fact in facts %}
-            <H4>Submitted by {{ fact.submitter }}</H4>
+            <h4>Submitted by {{ fact.submitter }}</h4>
             {{ fact.fact }}
         {% endfor %}
     </div>
