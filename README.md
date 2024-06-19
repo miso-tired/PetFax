@@ -46,12 +46,15 @@ flask run
 
 ## Fixes for Known Bugs/Flaws
 1.  **Error Page for Submissions**
+
 *Possible Causes*: This could be due to an unhandled exception in the submission process of a missing module.
+
 *Fix*:
 - Ensure all required modules are installed
 - Add error handling in the submission route to provide a user-friendly message.
 
 2. **Submission Restrictions**
+
 *Fix*: 
 - Implement input validation and sanitization.
 - Add checks to ensure the submitted facts meet certain criteria (e.g. length, content type)
