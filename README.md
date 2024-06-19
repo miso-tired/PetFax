@@ -25,16 +25,19 @@ install flask
 
 3. **Run Virtual Environment (Mac Users):**
 
-```source 
+```
+source 
 venv/bin/activate
 ```
 
 **Run Virtual Environment (Windows Users):**
-```venv\Scripts\activate
+```
+venv\Scripts\activate
 ```
 
 3. **Run Flask Application**
-```flask run
+```
+flask run
 ```
 
 ## Known Bugs/Flaws
