@@ -14,20 +14,19 @@ To run the application locally, follow the steps listed below:
 
 1. **Clone the repository:**
 
-```bash
+```
 git clone [repository url]
 ```
 
 2. **Install Flask**
-```pip
-install flask
+```
+pip install flask
 ```
 
 3. **Run Virtual Environment (Mac Users):**
 
 ```
-source 
-venv/bin/activate
+source venv/bin/activate
 ```
 
 **Run Virtual Environment (Windows Users):**
@@ -44,6 +43,18 @@ flask run
 1. *Error Page for Submissions*: When user tries to submit a pet fact, an error page displays.
 
 2. *Submission Restrictions*: No restrictions on what users can submit for pet facts. 
+
+## Fixes for Known Bugs/Flaws
+1.  **Error Page for Submissions**
+*Possible Causes*: This could be due to an unhandled exception in the submission process of a missing module.
+*Fix*:
+- Ensure all required modules are installed
+- Add error handling in the submission route to provide a user-friendly message.
+
+2. **Submission Restrictions**
+*Fix*: 
+- Implement input validation and sanitization.
+- Add checks to ensure the submitted facts meet certain criteria (e.g. length, content type)
 
 ## Acknowledgements
 Sources for photos used: 
